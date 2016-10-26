@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlGroupFavorites"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_200dp">
+
+            <TextView
+                android:id="@+id/tvNumberVendors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:text="3 Thương Hiệu" />
+
+            <ImageButton
+                android:id="@+id/btnAddVendors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:background="@drawable/custom_btn_add_vendors"
+                android:src="@drawable/ic_add_vendor_favorite"
+                android:textColor="@color/colorWhite" />
+
+            <ListView
+                android:id="@+id/lvFavorite"
+                android:layout_width="fill_parent"
+                android:scrollingCache="true"
+                android:fastScrollAlwaysVisible="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAddVendors"
+                android:layout_margin="@dimen/size_10dp"
+
+
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="#a6a6a6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMoreVendorFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:text="Có thể bạn sẽ thích " />
+
+            <GridView
+                android:id="@+id/membersListGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:numColumns="auto_fit"
+                android:padding="10dp"
+                android:fastScrollAlwaysVisible="true"
+                android:scrollingCache="true"
+                android:verticalSpacing="10dp"
+                android:visibility="visible"></GridView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

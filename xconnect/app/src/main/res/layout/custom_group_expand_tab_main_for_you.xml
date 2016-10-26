@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bcb9c4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlAirTravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20dp">
+
+        <ImageView
+            android:id="@+id/imgGroupVendorHomeForYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/custom_background_vendor"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titleGroupVendorHomeNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_toRightOf="@+id/imgGroupVendorHomeForYou"
+            android:text="Ari Travel"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSeeMoreHomeForYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:allowUndo="true"
+            android:background="@null"
+            android:text="Xem Thêm"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

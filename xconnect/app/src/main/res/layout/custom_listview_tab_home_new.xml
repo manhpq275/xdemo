@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding_bottom_item"
+        android:background="@drawable/custom_border_image_view">
+        <RelativeLayout
+            android:id="@+id/rlGroupEventCover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imCoverSize">
+
+            <ImageView
+                android:id="@+id/imEventCover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imCoverSize"
+                android:src="@mipmap/ic_launcher" />
+            <ImageView
+                android:id="@+id/imgOverLay"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginTop="@dimen/size_2dp"
+                android:background="@color/colorBlack" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avloadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicator="BallPulse"
+                app:indicator_color="@color/gray" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGroupVendorLogo"
+        android:layout_below="@+id/rlGroupEventCover"
+        android:layout_width="@dimen/imVendorSize"
+        android:layout_height="@dimen/imVendorSize"
+        android:layout_marginTop="@dimen/imVendor"
+        android:layout_marginLeft="@dimen/size_15dp">
+        <ImageView
+            android:id="@+id/imgVendorLogo"
+            android:layout_width="@dimen/imVendorSize"
+            android:layout_height="@dimen/imVendorSize"
+            android:background="@drawable/custom_background_vendor"
+            android:src="@mipmap/ic_launcher" />
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avloadingIndicatorLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicator="BallPulse"
+            app:indicator_color="@color/gray" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvVenDorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnInfo"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_toRightOf="@+id/rlGroupVendorLogo"
+            android:paddingBottom="@dimen/size_10dp"
+            android:text="Tour ghep"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <TextView
+            android:id="@+id/tvEventPromotionValue"
+            android:textColor="@color/colorWhite"
+
+            android:layout_width="@dimen/tvEventPromotionSize"
+            android:layout_height="@dimen/tvEventPromotionSize"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/circle_promotion"
+            android:gravity="center"
+            android:text="45%" />
+        <LinearLayout
+            android:id="@+id/lnInfo"
+            android:layout_toRightOf="@+id/rlGroupVendorLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlGroupEventCover"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/lnGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/size_10dp"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:text="Tour ghep Ha Noi-Phú Quốc Vinpearl 3 ngày 2 đêm  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_20sp" />
+
+                <LinearLayout
+                    android:id="@+id/inFormCoupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rlDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_15dp">
+
+                        <ImageView
+                            android:id="@+id/imgDateTimeHomeNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/padding_icon_text"
+                            android:src="@drawable/ic_date_time" />
+
+                        <TextView
+                            android:id="@+id/tvEventEndDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/size_15dp"
+                            android:text="Jun 15, 2016"
+                            android:textSize="@dimen/text_sze12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlFavorites"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_15dp">
+
+                        <ImageView
+                            android:id="@+id/imgFavoritesHomeNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/padding_icon_text"
+                            android:src="@drawable/ic_favorite_transference" />
+
+                        <TextView
+                            android:id="@+id/tvNumberOfLikes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/size_15dp"
+                            android:text="102"
+
+                            android:textSize="@dimen/text_sze12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_15dp">
+
+                        <ImageView
+                            android:id="@+id/imgCommentHomeNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/padding_icon_text"
+                            android:src="@drawable/ic_comment" />
+
+                        <TextView
+                            android:id="@+id/tvNumberOfComments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/size_15dp"
+                            android:text="112"
+                            android:textSize="@dimen/text_sze12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

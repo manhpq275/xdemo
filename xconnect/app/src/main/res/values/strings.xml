@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">X-CONNECT</string>
+    <string name="main_app_name">XCONNECT</string>
+    <string name="tv_percent">0%</string>
+    <string name="tab_home_hot">HOT</string>
+    <string name="tab_for_you">DÀNH CHO BẠN</string>
+    <string name="txt_home_new">MỚI</string>
+    <string name="title_restaurant">Nhà hàng</string>
+    <string name="tab_home">Trang Chủ</string>
+    <string name="tag_category">Danh Mục</string>
+    <string name="tab_nearby">Gần Bạn</string>
+    <string name="tab_favorite">Yêu Thích</string>
+    <string name="btn_add">Thêm Mới</string>
+    <string name="tab_store">Người Dùng</string>
+    <string name="progress_loading">Đang tải dữ liệu...</string>
+    <string name="txt_favorite_note">Bạn chưa quan tâm thương hiệu nào</string>
+    <string name="txt_favorite">Hãy lựa chọn thương hiệu, </string>
+    <string name="txt_favorite2">Những điều tốt đẹp sẽ đến với bạn! </string>
+    <string name="Error_401">Unauthorized</string>
+    <string name="Error_1000">Có lỗi xảy ra, vui lòng thử lại hoặc liên hệ với hỗ trợ kỹ thuật.</string>
+    <string name="no_data">Chưa có dữ liệu</string>
+    <string name="show_more">xem thêm</string>
+    <string name="txt_share">Chia sẻ</string>
+    <string name="txt_info">THÔNG TIN</string>
+    <string name="txt_comment">BÌNH LUẬN</string>
+    <string name="txt_location">ĐỊA ĐIỂM</string>
+    <string name="txt_map" >BẢN ĐỒ</string>
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="product_name">Product Name</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="txt_getCoupon">LẤY MÃ GIẢM GIÁ</string>
+    <string name="txt_vendor_info">Thông tin về thương hiệu</string>
+    <string name="txt_guide">Hướng dẫn</string>
+    <string name="txt_sub_guide">Cách lấy và sử dụng mã giảm giá</string>
+    <string name="just_now">vừa xong</string>
+    <string name="one">một</string>
+    <string name="minutes_ago">phút trước</string>
+    <string name="hours_ago">giờ trước</string>
+    <string name="days_ago">ngày trước</string>
+    <string name="months_ago">tháng trước</string>
+    <string name="years_ago">năm trước</string>
+    <string name="txtDang_nhap_tk">ĐĂNG NHẬP TÀI KHOẢN</string>
+    <string name="txtLoginFacebook">Đăng nhập bằng tài khoản Facebook</string>
+    <string name="tokenConsumer" />
+</resources>

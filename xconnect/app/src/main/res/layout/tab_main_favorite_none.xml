@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundFavorites"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/size_50dp"
+    android:weightSum="3"
+    tools:context=".presentations.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/size_100dp">
+
+        <ImageView
+            android:id="@+id/imgCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_circle_empty" />
+
+        <TextView
+            android:id="@+id/tvConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCircle"
+            android:gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:text="@string/txt_favorite_note"
+            android:textColor="#696994"
+            android:textSize="@dimen/text_size_20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCircle"
+            android:layout_marginLeft="@dimen/size_50dp"
+            android:layout_marginRight="@dimen/size_50dp"
+            android:gravity="center"
+            android:paddingTop="@dimen/size_20dp"
+            android:text="@string/txt_favorite"
+            android:textColor="#777799"
+            android:textSize="@dimen/text_size_15sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCircle"
+            android:layout_marginLeft="@dimen/size_50dp"
+            android:layout_marginRight="@dimen/size_50dp"
+            android:gravity="center"
+            android:paddingTop="@dimen/size_10dp"
+            android:text="@string/txt_favorite2"
+            android:textColor="#777799"
+            android:textSize="@dimen/text_size_15sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tvPercxent"
+        android:layout_width="@dimen/size_200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_background_vendor"
+        android:text="@string/btn_add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_20sp" />
+</LinearLayout>

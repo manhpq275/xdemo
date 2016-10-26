@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/rlImage">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imConsumerAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_gift"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="5"
+            app:civ_shadow_color="@color/colorBlack"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/rlImage"
+        android:id="@+id/relativeLayout2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="name"
+            android:textSize="@dimen/text_size_15sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tvConsumerName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Comment"
+            android:id="@+id/tvComment"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tvConsumerName" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="11 ngày trước"
+            android:id="@+id/tvCommentDate"
+            android:textSize="@dimen/text_size_12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvComment" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Reply"
+            android:id="@+id/tvReply"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/tvCommentDate"
+            android:textSize="@dimen/text_size_12sp"
+            android:layout_below="@+id/tvComment" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">xconnect</string>
+    <string name="main_app_name">XCONNECT</string>
+    <string name="tv_percent">0%</string>
+    <string name="tab_home_hot">HOT</string>
+    <string name="tab_for_you">For you</string>
+    <string name="txt_home_new">New</string>
+    <string name="title_restaurant">Nhà hàng</string>
+    <string name="tab_home">Home</string>
+    <string name="tag_category">Category</string>
+    <string name="tab_nearby">Near by</string>
+    <string name="tab_favorite">Favourite</string>
+    <string name="tab_store">User</string>
+    <string name="progress_loading">Loading...</string>
+    <string name="Error_401">Unauthorized</string>
+    <string name="Error_1000">An error has occurred, please try again.</string>
+    <string name="no_data">No Data</string>
+    <string name="show_more">show more</string>
+    <string name="txt_share">Share</string>
+    <string name="txt_info">INFO</string>
+    <string name="txt_comment">COMMENT</string>
+    <string name="txt_location">LOCATION</string>
+    <string name="txt_map" >MAP</string>
+    <string name="txt_getCoupon">GET COUPON</string>
+    <string name="txt_vendor_info">Vendor Info</string>
+    <string name="txt_guide">Guide</string>
+    <string name="txt_sub_guide">How to obtain and use the discount code</string>
+    <string name="just_now">vừa xong</string>
+    <string name="one">một</string>
+    <string name="minutes_ago">phút trước</string>
+    <string name="days_ago">ngày trước</string>
+    <string name="months_ago">tháng trước</string>
+    <string name="years_ago">năm trước</string>
+    <string name="txtDang_nhap_tk">ĐĂNG NHẬP TÀI KHOẢN</string>
+    <string name="txtLoginFacebook">Đăng nhập bằng tài khoản Facebook</string>
+    <string name="tokenConsumer" />
+</resources>

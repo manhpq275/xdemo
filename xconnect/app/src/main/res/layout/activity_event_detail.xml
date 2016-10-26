@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlGroupCoverSlider"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_size">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="190dp" />
+
+        <vn.mvv.xconnect.utils.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/view_pager"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlGroupTop"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/trending_gradient_shape"
+        android:layout_height="@dimen/event_detail_top_bar">
+
+        <ImageView
+            android:layout_width="@dimen/event_detail_top_bar"
+            android:layout_height="@dimen/event_detail_top_bar"
+            android:id="@+id/btBack"
+            android:padding="@dimen/padding_back_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/bt_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_20sp"
+            android:id="@+id/tvEventName"
+            android:layout_toRightOf="@+id/btBack"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:lines="1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGroupCouponInfo"
+        android:layout_below="@+id/rlGroupCoverSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="@drawable/custom_border_image_view">
+        <TextView
+            android:id="@+id/tvEventPromotionValue"
+            android:textColor="@color/colorWhite"
+            android:layout_width="@dimen/event_detail_top_bar"
+            android:layout_height="@dimen/event_detail_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_promotion"
+            android:gravity="center"
+            android:text="45%" />
+        <ImageView
+            android:id="@+id/imgEventPromotionGift"
+            android:layout_width="@dimen/event_detail_top_bar"
+            android:layout_height="@dimen/event_detail_top_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_gift"
+            android:background="@drawable/circle_promotion"
+            android:gravity="center"
+            android:padding="10dp">
+
+            </ImageView>
+        <TextView
+            android:id="@+id/tvEventNameInfo"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:layout_toRightOf="@+id/tvEventPromotionValue"
+            android:text=""
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:id="@+id/rlLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEventNameInfo"
+            android:layout_toRightOf="@+id/tvEventPromotionValue"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgFavoritesHomeNew"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_favorite_transference" />
+
+            <TextView
+                android:id="@+id/tvNumberOfLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgFavoritesHomeNew"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="@dimen/text_sze12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEventNameInfo"
+            android:layout_toRightOf="@+id/rlLike"
+            android:paddingLeft="40dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgCommentHomeNew"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/tvNumberOfComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgCommentHomeNew"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="@dimen/text_sze12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEventNameInfo"
+            android:layout_toRightOf="@+id/rlComment"
+            android:paddingLeft="40dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_menu_share" />
+
+            <TextView
+                android:id="@+id/tvShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgShare"
+                android:paddingLeft="5dp"
+                android:text="@string/txt_share"
+                android:textSize="@dimen/text_sze12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlGroupTabLayout"
+        android:layout_below="@+id/rlGroupCouponInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_border_image_view">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height"
+                android:elevation="@dimen/size_6dp"
+                app:tabTextAppearance="@style/EventDetailTabText"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tab_layout"
+                android:background="@color/colorWhite" />
+    </RelativeLayout>
+</RelativeLayout>

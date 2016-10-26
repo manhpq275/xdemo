@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_favourites"
+    android:background="@color/colorBackgroundFavorites">
+
+    <ImageView
+        android:id="@+id/imgVendor"
+        android:layout_width="@dimen/imVendorSize"
+        android:layout_height="@dimen/imVendorSize"
+        android:background="@drawable/custom_background_vendor"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Vendor Name"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="@dimen/padding_favourites"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgVendor"
+        android:layout_toEndOf="@+id/imgVendor" />
+
+    <TextView
+        android:id="@+id/lblShowMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_more"
+        android:textSize="12dp"
+        android:textColor="@color/colorRed"
+        android:layout_alignTop="@+id/lblListHeader"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

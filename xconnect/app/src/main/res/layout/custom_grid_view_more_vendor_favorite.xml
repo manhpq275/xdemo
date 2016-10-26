@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/size_20dp"
+    android:layout_marginLeft="@dimen/size_20dp">
+
+    <ImageView
+        android:id="@+id/imgVenDorFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_border_image_view"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvVenDorFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgVenDorFavorite"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:text="PepSi"
+        android:textSize="@dimen/size_15dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleFavorites"
+        android:layout_width="@dimen/size_30dp"
+        android:layout_height="@dimen/size_30dp"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:layout_toRightOf="@+id/imgVenDorFavorite"
+        android:background="@drawable/toggle_btn_favorite"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d10115</color>
+    <color name="colorTVCoupons">#aaaaaa</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#fff</color>
+    <color name="nonSelectTab">#aaaaaa</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackTransparent">#66000000</color>
+    <color name="colorBackgroundFavorites">#f1f1f1</color>
+
+    <color name="colorbar">#CCf81227</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTabHome">#f81227</color>
+    <color name="colorRed">#d10115</color>
+    <color name="text_shadow">#aaaaaa</color>
+    <color name="gray">#cccccc</color>
+    <color name="color_phone_bg">#52a51a</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+</resources>

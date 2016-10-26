@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/imgVendorFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_6dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/lnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/lnGroupAddToggle"
+        android:layout_toRightOf="@+id/imgVendorFavorite"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:paddingLeft="@dimen/size_6dp"
+        android:paddingTop="@dimen/size_15dp">
+
+        <TextView
+            android:id="@+id/titleVendorFavorite"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/size_30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Amazon "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <LinearLayout
+            android:id="@+id/inFormCoupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnGroupAddToggle"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/size_30dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:id="@+id/toggleFavorites"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_marginRight="@dimen/size_6dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:background="@drawable/toggle_btn_favorite"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn=""/>
+        <TextView
+            android:layout_marginTop="@dimen/size_6dp"
+            android:text="Quan Tâm"
+            android:textColor="@color/colorBlackTransparent"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_sze12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

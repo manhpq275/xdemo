@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="300dp">
+
+    <ImageView
+        android:id="@+id/imgVendorFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_6dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/lnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleFavorites"
+        android:layout_toRightOf="@+id/imgVendorFavorite"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_6dp"
+        android:paddingTop="@dimen/size_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/size_10dp"
+            android:text="Tour ghep Ha Noi-Phú Quốc Vinpearl 3 ngày 2 đêm  "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <LinearLayout
+            android:id="@+id/inFormCoupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlCoupons"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgVendorFavorite">
+
+                <ImageView
+                    android:id="@+id/imgCoupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:src="@drawable/ic_coupons" />
+
+                <TextView
+                    android:id="@+id/tvCouponsHomeNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgCoupons"
+                    android:paddingLeft="@dimen/size_6dp"
+                    android:text="10%"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/text_sze12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgVendorFavorite"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <ImageView
+                    android:id="@+id/imgDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:src="@drawable/ic_date_time" />
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgDateTime"
+                    android:paddingLeft="@dimen/size_6dp"
+                    android:text="Jun 15, 2016"
+                    android:textSize="@dimen/text_sze12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFavorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgVendorFavorite"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <ImageView
+                    android:id="@+id/imgFavorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:src="@drawable/ic_favorite_transference" />
+
+                <TextView
+                    android:id="@+id/tvFavorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgFavorites"
+                    android:paddingLeft="@dimen/size_6dp"
+                    android:text="102"
+                    android:textSize="@dimen/text_sze12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgVendorFavorite"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <ImageView
+                    android:id="@+id/imgComment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/size_2dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_comment" />
+
+                <TextView
+                    android:id="@+id/tvComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgComment"
+                    android:paddingLeft="@dimen/size_6dp"
+                    android:text="112"
+                    android:textSize="@dimen/text_sze12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

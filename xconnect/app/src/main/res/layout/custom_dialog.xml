@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/padding_dialog_lr"
+        android:layout_marginTop="@dimen/padding_dialog_top"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_background_dialog"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:text="Medium Text"
+            android:id="@+id/tvHeader"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_bg_content_dialog"
+            android:layout_below="@+id/tvHeader">
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-225dp"
+        android:layout_marginRight="-25dp"
+        android:background="@android:drawable/presence_offline"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignRight="@+id/relativeLayout" />
+
+</RelativeLayout>
